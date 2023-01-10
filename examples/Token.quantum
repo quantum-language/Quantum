@@ -1,0 +1,29 @@
+namespace Quantum;
+
+export enum TokenType {
+    // Punctuation
+    LeftParen,
+    RightParen,
+    LeftBrace,
+    RightBrace,
+    LeftBracket,
+    RightBracket,
+    Semicolon,
+    Comma,
+    Colon,
+    Dot,
+
+    // Literals
+    Identifier,
+    String,
+    Number,
+
+    // Special
+    EOF
+}
+
+export class Token(tokenType: TokenType, lexeme: String, literal: Any, line: Int, column: Int) : Object {
+    override func toString() {
+        return "Token($tokenType, $lexeme, $literal, $line, $column)";
+    }
+}

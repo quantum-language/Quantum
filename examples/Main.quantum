@@ -1,0 +1,7 @@
+namespace Quantum;
+
+import "Token"; // Subject to change.
+
+func main(args: Array[String]): Int {
+    
+}

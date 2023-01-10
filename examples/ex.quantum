@@ -1,0 +1,216 @@
+/*
+This source file contains a bunch of different example programs that I can use
+to write the language specifications for the language.  I'm not sure if I'll
+use this file or not, but I'm keeping it around just in case.
+*/
+
+// Namespaces
+namespace Quantum;
+
+// Importing modules
+import "stdlib";
+
+// Variables and constants
+var x: Int = 5;
+const y: String = "Hello";
+
+// Types
+var i: Int = 5;
+var f: Float = 5.0;
+var s: String = "Hello";
+var c: Char = 'a';
+var b: Bool = true;
+
+// Arrays
+var a: Array[Int] = [1, 2, 3];
+var b: Array[String] = ["Hello", "World"];
+
+// Maps
+var m: Map[String, Int] = {"Hello": 5, "World": 10};
+
+// Custom Types
+type MyType = String | Int;
+var x: MyType = "Hello";
+var y: MyType = 10;
+
+// Functions
+func add(x: Int, y: Int): Int {
+    return x + y;
+}
+
+// Classes
+class MyClass {
+    var x: Int = 5;
+    var y: Int = 10;
+
+    func add(): Int {
+        return x + y;
+    }
+}
+
+// Interfaces
+interface MyInterface {
+    func add(x: Int, y: Int): Int;
+}
+
+// Implementing interfaces
+class MyClass implements MyInterface {
+    override func add(x: Int, y: Int): Int {
+        return x + y;
+    }
+}
+
+// Inheritance
+class MyClass : MyParentClass {
+    override func add(x: Int, y: Int): Int {
+        return x + y;
+    }
+}
+
+// Constructors
+class ConstructorClass(x: Int, y: Int) {
+    func add(): Int {
+        return x + y;
+    }
+}
+
+// Access modifiers
+class MyClass {
+    priv var x: Int = 5;
+    prot var y: Int = 10;
+    pub var z: Int = 15;
+}
+
+// Static members
+class MyClass {
+    static var x: Int = 5;
+    static func add(x: Int, y: Int): Int {
+        return x + y;
+    }
+}
+
+// Enumerations (heavily inspired by Rust and Java)
+enum MyEnum(i: Int, s: String) {
+    Test1(5, "Hello");
+    Test2(10, "World");
+}
+
+// Pattern matching
+func add(x: Int, y: Int): Int {
+    match x {
+        case 0 => return y;
+        case _ => return x + y;
+    }
+}
+
+// If statements
+func test(x: Int): Int {
+    if x == 0 {
+        return 5;
+    } else if x == 1 {
+        return 10;
+    } else {
+        return 15;
+    }
+}
+
+// For loops
+func test(): Int {
+    var x: Int = 0;
+    for i in 0..10 {
+        x += i;
+    }
+    return x;
+}
+
+// While loops
+func test(): Int {
+    var x: Int = 0;
+    while x < 10 {
+        x += 1;
+    }
+    return x;
+}
+
+// Exporting modules
+export var x: Int = 5;
+export func add(x: Int, y: Int): Int {
+    return x + y;
+}
+
+// Annotations
+annotation MyAnnotation(x: Int, y: Int);
+
+// Using annotations
+@MyAnnotation(5, 10)
+func test(): Int {
+    return 5;
+}
+
+// Accessing annotations using reflection
+func test(): Int {
+    var annotations: Array[Annotation] = getAnnotations(test);
+    for a in annotations {
+        if a.name == "MyAnnotation" {
+            var x: Int = a.get("x");
+            var y: Int = a.get("y");
+        }
+    }
+    return 5;
+}
+
+// Using the standard library
+func test(): Int {
+    var x: Int = 5;
+    var y: Int = 10;
+    var z: Int = stdlib.add(x, y);
+    return z;
+}
+
+// Error handling
+func test(): Int {
+    try {
+        var x: Int = 5;
+        var y: Int = 10;
+        var z: Int = stdlib.add(x, y);
+        return z;
+    } catch (e: Exception) {
+        return 0;
+    }
+}
+
+// Exporting classes
+export class MyClass {
+    var x: Int = 5;
+    var y: Int = 10;
+
+    func add(): Int {
+        return x + y;
+    }
+}
+
+// Exporting interfaces
+export interface MyInterface {
+    func add(x: Int, y: Int): Int;
+}
+
+// Exporting enumerations
+export enum MyEnum(i: Int, s: String) {
+    Test1(5, "Hello");
+    Test2(10, "World");
+}
+
+// Exporting annotations
+export annotation MyAnnotation(x: Int, y: Int);
+
+// Exporting functions
+export func add(x: Int, y: Int): Int {
+    return x + y;
+}
+
+// Exporting variables
+export var x: Int = 5;
+export const y: String = "Hello";
+
+// Exporting types
+export type MyType = String | Int;
