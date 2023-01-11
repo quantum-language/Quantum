@@ -8,3 +8,11 @@
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
 - [Syntax](#syntax)
+- [Types](#types)
+- [Variables](#variables)
+- [Functions](#functions)
+- [Classes](#classes)
+- [Modules](#modules)
+- [Operators](#operators)
+
+
