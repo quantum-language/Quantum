@@ -32,3 +32,14 @@ Quantum is a programming language designed to be easy and efficient to use. It i
 - **⚡️ Statically-typed** Quantum is a statically-typed language meaning that the compiler knows the type of a variable at runtime.
 - **📚 Object Oriented** Quantum is object oriented like Java, meaning that everything ...
 - **
+
+## 
+
+## 🪪 License
+
+Quantum uses the General Public License 3.0, you can read more about it [here](https://github.com/quantum-language/Quantum/blob/master/LICENSE).
+
+## 🤝 Contributing
+
+...
+
