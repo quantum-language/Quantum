@@ -1,0 +1,25 @@
+{
+  "name": "quantum",
+  "displayName": "quantum",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "quantum",
+      "aliases": ["quantum", "quantum"],
+      "extensions": [".qt", ".qtm", ".quantum"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "quantum",
+      "scopeName": "main.qt",
+      "path": "./syntaxes/quantum.tmLanguage.json"
+    }]
+  }
+}

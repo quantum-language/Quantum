@@ -2,7 +2,7 @@
 
 <div style="display:flex;justify-content:center;margin-bottom:2rem;">
     <img src="https://raw.githubusercontent.com/quantum-language/Quantum/master/docs/assets/quantum-logo.png" width="100" height="
-100" alt="Quantum Logo" style="margin-right:2rem;filter:invert(1);background:transparent;" />
+100" alt="Quantum Logo" style="margin-right:3rem;" />
 
 # Quantum
 </div>
