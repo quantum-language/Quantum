@@ -19,3 +19,6 @@ Quantum is blah blah blah do this
 </div>
 </div>
 
+> **Note**
+> Quantum is currently in it's preplanning stages and has not started development yet. Anything written in any of the design docments are subject to change at any time.
+
