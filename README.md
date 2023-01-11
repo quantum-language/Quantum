@@ -1,6 +1,6 @@
 <div align="left">
 
-<div style="display:flex;justify-content:center;margin-bottom:2rem;">
+<div>
     <img src="https://raw.githubusercontent.com/quantum-language/Quantum/master/docs/assets/quantum-logo.png" width="100" height="
 100" alt="Quantum Logo" align="left" />
 
