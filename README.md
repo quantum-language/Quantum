@@ -4,7 +4,7 @@
     <img src="https://raw.githubusercontent.com/quantum-language/Quantum/master/docs/assets/quantum-logo.png" width="100" height="
 100" alt="Quantum Logo" align="left" />
 
-# Quantum
+# 🚀 Quantum
 </div>
 
 Quantum is blah blah blah do this
@@ -20,5 +20,15 @@ Quantum is blah blah blah do this
 </div>
 
 > **Note**
-> Quantum is currently in it's preplanning stages and has not started development yet. Anything written in any of the design docments are subject to change at any time.
+> Quantum is currently in it's preplanning stages and has not started development yet. Anything written in any of the design documents are subject to change at any time.
 
+## 👋 Introduction
+
+Quantum is a programming language designed to be easy and efficient to use. It is statically-typed, object-oriented, and heavily inspired by languages such as Java, Kotlin and Rust.
+
+## ✨ Features
+
+- **📲 Compiled** Quantum is a compiled language meaning that it ...
+- **⚡️ Statically-typed** Quantum is a statically-typed language meaning that the compiler knows the type of a variable at runtime.
+- **📚 Object Oriented** Quantum is object oriented like Java, meaning that everything ...
+- **
