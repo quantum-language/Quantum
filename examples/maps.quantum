@@ -1,0 +1,60 @@
+// Maps
+// Maps are a collection of key-value pairs. The keys are unique and are used to look up the values.
+const map: Map[String, Map[String, Any]] = new Map[String, Map[String, Any]]({
+    "key1": new Map[String, Any]({
+        "key1": "value1",
+        "key2": "value2"
+    }),
+    "key2": new Map[String, Any]({
+        "key1": "value1",
+        "key2": "value2"
+    })
+});
+
+// Get a value from a map
+const value: Any = map.get("key1").get("key1");
+
+// Set a value in a map
+map.get("key1").set("key1", "value3");
+
+// Remove a value from a map
+map.get("key1").remove("key1");
+
+// Check if a map contains a key
+const containsKey: Boolean = map.get("key1").containsKey("key1");
+
+// Check if a map contains a value
+const containsValue: Boolean = map.get("key1").containsValue("value1");
+
+// Get the size of a map
+const size: Int = map.get("key1").size();
+
+// Clear a map
+map.get("key1").clear();
+
+// Get the keys of a map
+const keys: List[String] = map.get("key1").keys();
+
+// Get the values of a map
+const values: List[Any] = map.get("key1").values();
+
+// Iterate over a map
+for (const [key, value] in map.get("key1")) {
+    // Do something with the key and value
+}
+
+// Iterate over a map with a lambda
+map.get("key1").forEach((key: String, value: Any) => {
+    // Do something with the key and value
+});
+
+// Map with functions
+const methods: Map[String, Any] = new Map({
+    "add": (a: Int, b: Int) => a + b,
+    "subtract": (a: Int, b: Int) => a - b,
+    "multiply": (a: Int, b: Int) => a * b,
+    "divide": (a: Int, b: Int) => a / b
+});
+
+// Call a function from a map
+const result: Int = methods.get("add")(1, 2);
