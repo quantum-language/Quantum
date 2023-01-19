@@ -1,7 +1,8 @@
-namespace Quantum;
+priv var x: Int = 0;
+pub const hello: String = "Hello, world!";
 
-import "Token"; // Subject to change.
+export type MyType = String | Int;
 
 func main(args: Array[String]): Int {
-    
+    return 0;
 }

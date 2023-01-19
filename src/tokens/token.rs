@@ -5,6 +5,8 @@ pub enum TokenType {
     LeftBracket, RightBracket,
     Comma, Dot,
     Semicolon, Colon,
+    Pipe, Or,
+    Ampersand, And,
 
     Plus, Minus, Star, Slash, Percent,
     Bang, BangEqual,
@@ -12,14 +14,14 @@ pub enum TokenType {
     Greater, GreaterEqual,
     Less, LessEqual,
 
-    Identifier, String, Number,
+    Identifier(String), String(String), Number(f64),
 
     Var, Const, Type, Func, Return,
     Class, Interface, Override, Implements,
     Priv, Prot, Pub, Static, Enum, Match,
     Case, If, Else, For, In, While, Export,
     Import, Annotation, Try, Catch, Finally,
-    Namespace, New,
+    Namespace, New, Typeof,
 
     True, False, Null,
 
@@ -32,4 +34,15 @@ pub struct Token {
     pub lexeme: String,
     pub line: usize,
     pub column: usize,
+}
+
+impl Token {
+    pub fn new(token_type: TokenType, lexeme: String, line: usize, column: usize) -> Self {
+        Self {
+            token_type,
+            lexeme,
+            line,
+            column,
+        }
+    }
 }
