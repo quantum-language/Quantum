@@ -1,0 +1,20 @@
+// Object-oriented programming in Qunatum
+
+// Class definition
+class MyClass { }
+
+// Class Constructors
+class MyClass(a: Int, b: String) { }
+
+// Class Methods
+class MyClass {
+    func myMethod(a: Int, b: String): String {
+        return a + b;
+    }
+}
+
+// Class Fields
+class MyClass {
+    var myField: String = "Hello";
+}
+

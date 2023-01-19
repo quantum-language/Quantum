@@ -1,0 +1,18 @@
+// Functional programming in Quantum
+
+// Lambda functions
+// The following is a lambda function that takes two integers and returns an integer.
+// Please note that the variable type is the return type of the method.
+const add: Int = (a: Int, b: Int) => a + b
+
+// Anonymous functions
+// Pretty self explanatory
+println(((x, y) => x + y)(1, 2))
+
+// Higher order functions
+// A function that takes a function as a parameter.
+// TODO: Figure out the syntax.
+
+// Currying (Not sure if I'll implement this one, but it's worth a mention)
+// A function that takes multiple parameters and returns a function that takes the next parameter.
+// TODO: Figure out the syntax.
